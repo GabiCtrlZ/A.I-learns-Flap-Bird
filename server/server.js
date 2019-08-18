@@ -5,5 +5,5 @@ const PORT = 8080
 app.use(express.static(path.join(__dirname, '..', 'public')))
 
 app.listen(process.env.PORT || PORT, function () {
-    console.log('server is on:' + PORT)
+    console.log('server is on: ' + PORT)
 })
