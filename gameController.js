@@ -5,7 +5,7 @@ function GameController() {
     let gen = 1
     let highScore = $('#high_score')
     function lastHigh() {
-        highScore.text(gen)
+        highScore.text(`Generation: ${gen}`)
     }
     function genAndDistroy() {
         if (counter == (25 * 90)) {
@@ -17,7 +17,7 @@ function GameController() {
     function appendScore() {
         if ((timer - (156 * 25)) % (25 * 90) == 0) {
             score += 10
-            $('#score').text(score)
+            $('#score').text(`Score: ${score}`)
         }
     }
     function appendCounters() {
