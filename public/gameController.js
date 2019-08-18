@@ -37,7 +37,7 @@ function GameController() {
         timer = 0
         counter = 0
         gen++
-        $('#score').text(score)
+        $('#score').text(`Score: ${score}`)
     }
     const interval = setInterval(() => {
         if (pop.allAlive()) {
