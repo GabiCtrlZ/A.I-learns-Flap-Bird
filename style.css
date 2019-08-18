@@ -1,0 +1,67 @@
+body{
+    margin: 0;
+}
+.cortain{
+    background-color: white;
+    position: absolute;
+}
+#cortain-left{
+    width: 400px;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+#cortain-right{
+    width: 200px;
+    height: 100%;
+    top: 0;
+    left: 1000px;
+}
+#cortain-top{
+    width: 100%;
+    height: 20px;
+    top: 0;
+    left: 0;
+}
+#cortain-bottom{
+    width: 100%;
+    height: 100%;
+    top: 620px;
+    bottom: 0;
+}
+#container{
+    height: 600px;
+    width: 600px;
+    margin-top: 20px;
+    margin-left: 400px;
+    position: relative;
+    z-index: -3;
+    background-image: url("./background.png")
+}
+.bird{
+    background-image: url("./Bird.png");
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    border-radius: 50%;
+    z-index: -2;
+}
+.upper_pipe{
+    background-image: url('./Pipe.png');
+    height: 500px;
+    width: 60px;
+    position: absolute;
+    z-index: -1;
+}
+#score{
+    font-size: 40px;
+    margin-left: 400px;
+    z-index: 1;
+    position: relative;
+}
+#high_score{
+    font-size: 40px;
+    margin-left: 400px;
+    z-index: 1;
+    position: relative;
+}
