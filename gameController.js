@@ -15,13 +15,7 @@ function GameController() {
         }
     }
     function appendScore() {
-        if (timer > (156 * 25) && score >= 10) {
-            if ((timer - (156 * 25)) % (25 * 90) == 0) {
-                score += 10
-                $('#score').text(score)
-            }
-        }
-        else if (timer > (156 * 25)) {
+        if ((timer - (156 * 25)) % (25 * 90) == 0) {
             score += 10
             $('#score').text(score)
         }
@@ -42,7 +36,7 @@ function GameController() {
         score = 0
         timer = 0
         counter = 0
-        gen ++
+        gen++
         $('#score').text(score)
     }
     const interval = setInterval(() => {
