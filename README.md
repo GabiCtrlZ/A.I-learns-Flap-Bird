@@ -1,6 +1,6 @@
 ﻿# A.I learns Flapper Bird
 
-Link to watch the A. I learned: https://ai-learns-to-play.herokuapp.com/ Using nothing but pure vanilla JS, I implemented genetic algorithms and neural networks to teach an A. I how to play a version of flappy bird I created.
+Link to watch the A. I train: https://ai-learns-to-play.herokuapp.com/ Using nothing but pure vanilla JS, I implemented genetic algorithms and neural networks to teach an A. I how to play a version of flappy bird I created.
 
 ## Pictures from the game
 
