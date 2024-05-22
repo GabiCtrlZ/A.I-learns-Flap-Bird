@@ -20,6 +20,7 @@ class Population {
             indev.bird.gravity()
             indev.test()
         }
+        $('#alive').text(`Alive: ${this.population.filter( i => i.bird.notDead).length}`)
     }
     bestOfPopulation() {
         let bestFitness = this.population[0].fitness

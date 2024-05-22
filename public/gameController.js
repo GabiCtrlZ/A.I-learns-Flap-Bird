@@ -27,17 +27,24 @@ function GameController() {
     function resetGame() {
         $('#container').empty();
         $('#container').append(`
-        <div class="upper_pipe" style="left: 650px; top: -335px"></div>
+        <div class="upper_pipe" style="left: 650px; top: ${320 - pipeDiffHeight}px"></div>
         <div class="upper_pipe" style="left: 650px; top: 320px"></div>
-        <div class="upper_pipe" style="left: 380px; top: -335px"></div>
+        <div class="upper_pipe" style="left: 380px; top: ${320 - pipeDiffHeight}px"></div>
         <div class="upper_pipe" style="left: 380px; top: 320px"></div>`)
-        pop.modifyPopulation()
+        if (score > highScoreOfficial) highScoreOfficial = score
+        if (gen % 10 === 0 && highScoreOfficial < 50) {
+            pop = new Population(30, 3)
+        } else {
+            pop.modifyPopulation()
+        }
         console.log(pop)
         score = 0
         timer = 0
         counter = 0
         gen++
         $('#score').text(`Score: ${score}`)
+        $('#high_score_official').text(`High Score: ${highScoreOfficial}`)
+        $('#alive').text('Alive: 30')
     }
     const interval = setInterval(() => {
         if (pop.allAlive()) {

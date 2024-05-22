@@ -1,11 +1,11 @@
 function AllPipes() {
     function ran() {
-        return (Math.floor(Math.random() * 310) - 410)
+        return (Math.floor(Math.random() * 350) - 450)
     }
     function pipeGenerator() {
         let num = ran()
         $('#container').append(`<div class="upper_pipe" style="left: 650px; top: ${num}px"></div>`)
-        $('#container').append(`<div class="upper_pipe" style="left: 650px; top: ${num + 655}px"></div>`)
+        $('#container').append(`<div class="upper_pipe" style="left: 650px; top: ${num + pipeDiffHeight}px"></div>`)
     }
     function distroyPipes(){
         let upperArray = $('.upper_pipe')

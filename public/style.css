@@ -65,3 +65,15 @@ body{
     z-index: 1;
     position: relative;
 }
+#alive{
+    font-size: 40px;
+    margin-left: 400px;
+    z-index: 1;
+    position: relative;
+}
+#high_score_official{
+    font-size: 40px;
+    margin-left: 400px;
+    z-index: 1;
+    position: relative;
+}
