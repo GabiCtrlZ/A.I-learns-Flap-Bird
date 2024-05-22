@@ -1,7 +1,7 @@
 
 let pop = new Population(30, 3)
 let highScoreOfficial = 0
-const pipeDiffHeight = 648
+const pipeDiffHeight = 650
 console.log(pop)
 const allPipes = AllPipes()
 const gameController = GameController()
